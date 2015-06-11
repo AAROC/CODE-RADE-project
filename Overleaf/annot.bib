@@ -1,0 +1,135 @@
+% This is annote.bib
+% Author: Sakhile Masoka
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Continuous Integration
+
+@article{meyer14,
+	author	= {Mathias Meyer and Travis CI},
+    title	= {Continuous Integration and Its Tools},
+    journal	= {IEEE Software},
+    volume	= {31},
+    issue	= {3},
+    pages	= {14-16},
+    year	= {2014},
+    publisher	= {IEEE Computer Society},
+    annote	= {\ \\
+			\textbf{Aim:} To present the basics of continuous integration and its tools\\
+            
+			\textbf{Style/Type:} Journal Article \\
+            
+			\textbf{Summary:} The paper describes continuous integration (CI) as a set of principles that apply to the daily work-flow of development teams. First, all code must be kept in a repository. Secondly, when code is checked in the repository, the system checks the code and runs test to verify that the change is good. The core practice of CI is that small changes are committed to the main-branch daily instead of big changes once in a while. For these principles to work, the continuous integration server has to be unbiased and tools such as Jenkins ensures this. The principles combined with the tools brings culture of responsibility and ensures a safe development and deployment of applications.\\ }
+
+}
+
+@proceedings{joachim11,
+	author	= {Joachim Baumeister and Jochen Reutelshoefer},
+    title	= {Developing knowledge systems with continuous integration},
+    publisher	= {ACM, New York},
+    note	= {Proceedings of the 11th International Conference on Knowledge Management and Knowledge Technologies},
+    annote	= {\ \\
+			\textbf{Aim:} To transfer ideas of Continuous Integration from Software Engineering to Knowledge Engineering and demonstrate the implmentation of Continuous Integration tool into a Knowledge Engineering workbench.  \\
+            
+			\textbf{Style/Type:} Conference Paper \\
+            
+			\textbf{Summary:} Continuous Integration (CI) proposes a collection of practices for the engineering of software systems in order to improve the overall quality of the system. These practices which are (1) User of code repository (2) Automated tests on all levels of the software (3) Automated building of the software (4) Frequent and timely integration of new code (5) Easy access to the latest builds, can be implemented in most Knowledge Engineering tools. With the integration of CI dashboards for visualization of the development process, risk is reduced and providing a running system at any time of the development process becomes possible. The paper ends with an implementation of CI to Knowledge Engineering tool called Semantic Wiki. \\}
+}
+
+
+@misc{jenkins15,
+	title	= {{Jenkins Continuous Integration}},
+    howpublished	= "\url{http://jenkins-ci.org}",
+    year	= {2015},
+    note	= {Accessed 2015-04-20},
+    annote	= {\ \\
+			\textbf{Aim:} Official website for Jenkins, a continuous integration tool\\
+            
+			\textbf{Style/Type:} Website \\
+            
+			\textbf{Summary:} official website for Jenkins, an open source continuous integration tool. The software monitors executions of repeated jobs, such as building/testing a software project continuously and monitoring executions of externally-run jobs like cron-jobs. For each commit, Jenkins runs, test and reports back with feedback on you application deployment. These deployment can be directly to production or test environment which are distributed. Jenkins can be extended using plugins for additionally supporting processes not native to it. Further more, integration with gitHub is made easy.\\ }
+}
+
+
+
+% Containers
+@proceedings{lui14,
+	author	= {Di Lui and Libin Zhao},
+	title	= {The research and implementation of cloud computing platform based on docker},
+    year	= {2014},
+    pages	= {475-478},
+    publisher	= {IEEE},
+	annote	= {\ \\
+			\textbf{Aim:} To describe Dockers applications and advantages in a distributed environment. \\
+            
+			\textbf{Style/Type:} Conference article \\
+            
+			\textbf{Cross Reference:} The report compares Docker with Vmware ESXi \citep{vmware15}, with the one difference of virtualized applications
+includes not only the application and the necessary binaries and libraries, but also an entire guest operating system while the Docker Engine container comprises just the application and its dependencies which makes it more portable and efficient.\\
+            
+			\textbf{Summary:} Docker is an open-source project that automates the deployment of applications inside software containers, by providing an additional layer of abstraction and automation of operating system. Mainly used by developers and systems administrators, Dockers enables applications to be quickly assembled, from components and eliminates the friction between development, QA, and production environments. Docker's architecture, allows for portability and is lightweight compared to virtual machines as the engine allows containers to share the kernel while maintaining their isolation. Docker makes use of the following technologies to gain its advantages, namely, Namespaces, Control group (cgroup) and Union File systems (UFS). The article continues with an example implementation in a cloud environment Platform-As-A-Service configured. \\ }
+}
+
+@article{carl15,
+	author	= {Carl Boettiger},
+    title	= {An introduction to Docker for reproducible research},
+    journal	= {ACM SIGOPS Operating Systems Review},
+    volume	= {49},
+	issue	= {1},
+    pages	= {71-79},
+	year	= {2015},
+	publisher	= {ACM},
+    annote	= {\ \\
+			\textbf{Aim:} To present how Docker addresses challenges facing reproducible research  \\
+            
+			\textbf{Style/Type:} Conference article \\
+            
+			\textbf{Cross Reference:} A contrast is made between two paradigms that currently have emerged, work-flow and virtual machines. Both have struggled in the scientific community to be successful. \\
+            
+			\textbf{Summary:} Reproducible research has gained interest in scientific communities and the public at large. The paper presents four main technical challenges that poses substantial barriers to reproducing the original scientific results, namely ``Dependency Hell'',Imprecise documentation, Code rot and Barriers to adoption and reuse in existing solutions. Current approaches such as work-flow, virtual machines and ``DevOps'' does not effectively and elegantly address these challenges, but Docker which offers several promising features for reproducibility can. Docker images can resolves ``Dependency Hell'', Dockerfiles can resolves imprecise documentation and the work-flow docker provides, eliminates code rot and barriers to adoption and re-use. Docker is presented as portable and has the potential to address shortcomings of certain existing approaches to reproducible research challenges that stem from recreating complex computational environments. \\ }
+}
+
+@misc{vmware15,
+  title = {{VMware ESXi}},
+  howpublished = "\url{http://www.vmware.com/products/esxi-and-esx/overview}",
+  year = {2015}, 
+  note = "[Online; accessed 2015-04-20]"
+}
+
+% CernVM-FS Repository
+
+@proceedings{bunic10,
+	author	= {P Buncic and C Aguado Sanchez and J Blomer and L Franco and A Harutyunian and P Mato and Y Yao},
+    title	= {CernVM – a virtual software appliance for LHC applications},
+    volume 	= {219},
+    journal	= {Journal of Physics - Conference Series},
+    year	= {2010},
+    publisher	= {IOP Publishing},
+    note	= {17th International Conference on Computing in High Energy and Nuclear Physics},
+    annote	= {\ \\
+			\textbf{Aim:} CernVM aims to provide a complete and portable environment for developing and running LHC data analysis on any end-user computer (laptop, desktop) as well as on the Grid, independently of Operating System platforms (Linux, Windows, Mac OS).  \\
+            
+			\textbf{Style/Type:} Conference article \\
+            
+			\textbf{Summary:} CernVM is a lightweight Virtual Software Appliance intended to run on any operating system platform providing consistent and effortless installation of experiment software. CernVM runs a file system (CVMFS) which is optimized for software distribution. Its makes the directory tree stored on the web-server(CernVM) look like a local read-only file system on the client side. This allows to centrally install and maintain software on few  CernVM instances that run CVMFS and allow many clients to connect to access the software. File level caching on local disks further assists with client scalability. Compared to Andrew File System (AFS), CVMFS shows competitive performance figures, especially when the local disk is fully cached. Further improvement have been implemented in experimental versions to reduce https overheads and transfer volumes. By leveraging the standard https protocols, this technology is able to become a software distribution service. \\ }
+}
+
+@proceedings{blomer12,
+	author	= {J Blomer and P Buncic and I Charalampidis and A Harutyunyan and D Larsen and R Meusel},
+	title	= {Status and future perspectives of CernVM-FS},
+    volume	= {396},
+    journal	= {Journal of Physics - Conference Series},
+    year	= {2012},
+    publisher	= {IOP Publishing},
+    note	= {International Conference on Computing in High Energy and Nuclear Physics 2012},
+    annote	= {\ \\
+			\textbf{Aim:} To present a new approach to stage updates and changes into the file system, which aims to reduce the delay in distributing a software release.  \\
+            
+			\textbf{Style/Type:} Technical. \\
+
+			\textbf{Summary:} CVMFS is a read-only file system used to access High Energy Physics experiment software and conditions data. Files and directories are hosted in global namespace (/cvmfs) and grid worker nodes on remote sites are able to mount these CernVm-FS repositories. To further reduce the time to publish delay, a  read-write interface is created using the union file system, stacking CernVM-FS read-only file-system with a writable scratch area to track changes on the local node. Also, the publishing changes on the file systems is distributed to multiple machines, which improves the performance. With these improvements, CernVM-FS can be used as an exclusive software distribution system.\\ }
+
+}
+
+
+
+
